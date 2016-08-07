@@ -1,0 +1,84 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	font-family: sans-serif;
+}
+
+@mixin transition($type, $time){
+	transition: $type, $time;
+	-webkit-transition: $type, $time;
+	-moz-transition: $type, $time;
+	-o-transition: $type, $time;
+	-ms-transition: $type, $time;
+}
+
+.main{
+    background: url(../img/sky1_small.jpg) no-repeat;
+    background-size: cover;
+    background-clip: border-box;
+    height: 1000px;
+    color: #fff;
+}
+
+.red{
+	background: red;
+}
+
+.intro{
+	@include transition(all, .2s);
+	border: 3px solid #fff;
+	text-align: center;
+	background: rgba(255,255,255,0.2);
+	width: 50%;
+	padding: 2%;
+	margin: 0 auto;
+	top: 20%;
+	position: relative;
+	border-radius: 10px;
+		&:hover{
+			background: #fff;
+			color: #000;
+		}
+}
+
+.clients{
+	ul{
+		 li {
+    		display: inline-block;
+   			margin-left: 5%;
+    		padding: 1%;
+		}
+	}
+}
+
+.pointer{
+	cursor: pointer;
+}
+
+header{
+	background: #fff;
+	padding: 10px;
+	color: #000;
+
+	ul {
+		li {
+			list-style-type: none;
+			display: inline-block;
+			margin-left: 10px;
+			overflow: hidden;
+			vertical-align: top;
+		}
+	}
+}
+
+footer{
+	background: #000;
+	bottom: 0;
+	padding: 10px;
+	width: 100%;
+	color: #fff;
+	text-align: center;
+}

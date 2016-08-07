@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>alexkeydesign</title>
+	<link rel="stylesheet" type="text/css" href="css/master.css" />
+</head>
+<body ng-app="app" ng-controller="mainCtrl as main">
+
+<main-header bg="white"></main-header>
+	
+	<div class="main">
+		<h1 class="intro pointer">{{main.msg}}</h1>
+		<main-services></main-services>
+
+		<main-contact 
+			title="Contact us" 
+			num="100"
+			subtitle="Please enter your related subject">
+		</main-contact>
+
+	</div>
+
+<main-clients></main-clients>
+
+<main-footer footprint="alexkeydesign" year="2016"></main-footer>
+
+<script src="js/angular.min.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>
+
